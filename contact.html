@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221011091517">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221013130927">
     <title>Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap&_v=20221011091517"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap&_v=20221013130927"
         rel="stylesheet">
+
 </head>
 
 <body>
     <div class="wrapper contact-wrapper">
-        <header class="header ">
+        <header class="header lock-padding">
     <div class="header__container _container">
 
         <a class="header__logo" href="index.html">HILIGHT</a>
@@ -32,7 +33,7 @@
                 <li class="header__item"><a href="contact.html">Contacts</a></li>
             </ul>
             <button class="header__button-menu ">
-                <a href="">Send Request </a>
+                <a class="popup-link" href="#popup">Send Request </a>
             </button>
             <div class="mainblock1__info">
                 <a class="mainblock1__info-link1 mainblock1__info-link" href="">Fb</a>
@@ -54,11 +55,9 @@
             </div>
         </div>
         <a href="" class="header__lang">En</a>
-        <button class="header__button">
-            <a href="">Send Request </a>
+        <button class="header__button ">
+            <a class="popup-link" href="#popup">Send Request </a>
         </button>
-
-
     </div>
 </header>
 
@@ -123,11 +122,156 @@
 </footer>
 
     </div>
+    <div class="popup" id="popup2">
+    <div class="popup__body">
+        <a href="" class="popup__close"><img src="img/icons/icons.svg#close" alt=""></a>
+        <div class="popup__content">
+            <div class="popup__container">
+                <p class="popup-text">Thank you for your message!</p>
+                <p class="popup-text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
+                    mauris vitae posuere.
+                    Ut at luctus
+                    ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
+                <button class="popup__button"> <a class="popup-link" href="#popup">Send again</a></button>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js?_v=20221011091517"></script> -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js?_v=20221011091517"></script>
+            </div>
 
-    <script src="js/app.min.js?_v=20221011091517"></script>
+        </div>
+    </div>
+</div>
+    <div class="popup" id="popup">
+    <div class="popup__body">
+        <a href="" class="popup__close"><img src="img/icons/icons.svg#close" alt=""></a>
+        <div class="popup__content">
+            <div class="popup__sections">
+                <div class="popup__section1">
+                    <div class="popup__section1-container">
+                        <div class="popup__header">
+                            <p>Make request</p>
+                        </div>
+                        <div class="popup__input-container">
+                            <div class="popup__input">
+                                <input class="popup__font1" type="text" placeholder="Name">
+                            </div>
+                            <div class="popup__input">
+                                <input class="popup__font1" type="text" placeholder="Last name">
+                            </div>
+                            <div class="popup__input">
+                                <input class="popup__font1" type="tel" placeholder="Phone">
+                            </div>
+                            <div class="popup__input">
+                                <input class="popup__font1" type="text" placeholder="Your city">
+                            </div>
+                            <div class="popup__input">
+                                <input class="popup__font1" type="email" placeholder="Email">
+                            </div>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Property type</option>
+                                    <option value="1">Type 1</option>
+                                    <option value="2">Type 2</option>
+                                    <option value="3">Type 3</option>
+                                </select>
+                            </div>
+                            <div class="popup__input">
+                                <input class="popup__font1" type="text" placeholder="Your comment">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__section2">
+                    <div class="popup__section2-container">
+                        <div class="popup__text">
+                            <p class="popup__font1">Area (m2)</p>
+                        </div>
+                        <div class="popup__filter">
+                            <div class="popup__filter-container">
+                                <div class="popup__filter-section1">
+                                    <label class="popup__filter-item">
+                                        <input type="radio" name="area" value="to 50">
+                                        <p class="popup__descr">to 50</p>
+                                        <span class="checkmark checkmark1"></span>
+                                    </label>
+                                    <label class="popup__filter-item">
+                                        <input type="radio" name="area" value="50-150" checked>
+                                        <p class="popup__descr">50-150</p>
+                                        <span class="checkmark checkmark2"></span>
+                                    </label>
+                                    <label class="popup__filter-item">
+                                        <input type="radio" name="area" value="150-250">
+                                        <p class="popup__descr">150-250</p>
+                                        <span class="checkmark checkmark3"></span>
+                                    </label>
+                                    <label class="popup__filter-item">
+                                        <input type="radio" name="area" value="250-400">
+                                        <p class="popup__descr popup__descr7">250-400</p>
+                                        <span class="checkmark checkmark4"></span>
+                                    </label>
+                                </div>
+                                <div class="popup__filter-section2">
+                                    <label class="popup__filter-item">
+                                        <input type="radio" name="area" value="400-600">
+                                        <p class="popup__descr">400-600</p>
+                                        <span class="checkmark checkmark5"></span>
+                                    </label>
+                                    <label class="popup__filter-item">
+                                        <input type="radio" name="area" value="600-800">
+                                        <p class="popup__descr">600-800</p>
+                                        <span class="checkmark checkmark6"></span>
+                                    </label>
+                                    <label class="popup__filter-item">
+                                        <input type="radio" name="area" value="800-1000">
+                                        <p class="popup__descr">800-1000</p>
+                                        <span class="checkmark checkmark7"></span>
+                                    </label>
+                                    <label class="popup__filter-item">
+                                        <input type="radio" name="area" value="1000+">
+                                        <p class="popup__descr popup__descr7">1000+</p>
+                                        <span class="checkmark checkmark8"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup__attach">
+                            <div class="attach">
+                                <div class="attach__item">
+                                    <label>
+                                        <div class="attach__up"><img src="img/icons/icons.svg#attachfile"
+                                                class="svg-attachfile-dims" alt="attachfile">
+                                        </div>
+                                        <input class="attach__input" type="file" name="files" />
+                                    </label>
+                                    <div class="attach__descr">
+                                        <p class="popup__font1">Attach your file</p>
+                                        <p class="popup__font2">File size not more than 10 MB</p>
+                                    </div>
+
+                                    <div class="attach__name popup__font1"></div>
+                                    <div class="attach__edit popup__font1">Change</div>
+                                    <div class="attach__delete popup__font1">Delete</div>
+                                </div>
+                            </div>
+                            <div class="popup__button">
+                                <button> <a class="popup__font1 popup-link" href="#popup2">Send Request</a></button>
+                            </div>
+                        </div>
+                        <div class="popup__text2">
+                            <p>It is a long established fact that a reader will be distracted by the
+                                readable
+                                content of
+                                a page when looking at its
+                                layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                                distribution
+                                of letters, as opposed to using
+                                'Content here, content here', making it look like readable English.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js?_v=20221013130927"></script>
+    <script src="js/app.min.js?_v=20221013130927"></script>
 </body>
 
 </html>
