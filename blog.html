@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221013134816">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221015104524">
     <title>Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap&_v=20221013134816"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap&_v=20221015104524"
         rel="stylesheet">
 
 </head>
@@ -32,9 +32,8 @@
                 <li class="header__item"><a href="blog.html">Blog</a></li>
                 <li class="header__item"><a href="contact.html">Contacts</a></li>
             </ul>
-            <button class="header__button-menu ">
-                <a class="popup-link" href="#popup">Send Request </a>
-            </button>
+
+            <a class="header__button-menu popup-link" href="#popup">Send Request </a>
             <div class="mainblock1__info">
                 <a class="mainblock1__info-link1 mainblock1__info-link" href="">Fb</a>
                 <a class="mainblock1__info-link2 mainblock1__info-link" href="">In</a>
@@ -55,9 +54,7 @@
             </div>
         </div>
         <a href="" class="header__lang">En</a>
-        <button class="header__button ">
-            <a class="popup-link" href="#popup">Send Request </a>
-        </button>
+        <a class="header__button popup-link" href="#popup">Send Request </a>
     </div>
 </header>
         <main class="blog">
@@ -68,12 +65,12 @@
                             <p>Our latest news</p>
                         </div>
                         <div class="blog__block1-items">
-                            <a href="" class="blog__block1-item">All</a>
-                            <a href="" class="blog__block1-item">Blog</a>
-                            <a href="" class="blog__block1-item">News</a>
-                            <a href="" class="blog__block1-item">Advice from the designer</a>
+                            <a href="#" class="blog__block1-item active" data-id="all">All</a>
+                            <a href="#" class="blog__block1-item" data-id="blog">Blog</a>
+                            <a href="#" class="blog__block1-item" data-id="news">News</a>
+                            <a href="#" class="blog__block1-item" data-id="advice">Advice from the designer</a>
                         </div>
-                        <div class="custom-select">
+                        <div class="custom-select custom">
                             <select>
                                 <option value="0">Select opiton</option>
                                 <option value="1">All</option>
@@ -86,13 +83,13 @@
                     </div>
                 </div>
                 <div class="blog__block2">
-                    <div class="blog__block2-container">
-                        <div class="blog__block2-sec0">
+                    <div class="blog__block2-container" id="blog-container">
+                        <div class="blog__block2-sec0 s s-blog">
                             <div class="blog__block2-image">
-                                <a href=""> <picture><source srcset="img/blog__block2-1.webp" type="image/webp"><img src="img/blog__block2-1.jpg" alt=""></picture> </a>
+                                <a href="oneproject.html"> <picture><source srcset="img/blog__block2-1.webp" type="image/webp"><img src="img/blog__block2-1.jpg" alt=""></picture> </a>
                             </div>
                         </div>
-                        <div class="blog__block2-sec1">
+                        <div class="blog__block2-sec1 blog-section filter-blog s s-blog">
                             <div class="blog__block2-image">
                                 <p class="blog__block2-text1">5 smart tips for productive collaboration with the
                                     designer</p>
@@ -106,47 +103,45 @@
                             </div>
                         </div>
 
-                        <div class="blog__block2-sec2">
+                        <div class="blog__block2-sec2 blog-section filter-advice">
                             <div class="blog__block2-image">
-                                <a href="onenews.html"> <picture><source srcset="img/blog__block2-2.webp" type="image/webp"><img src="img/blog__block2-2.jpg" alt=""></picture> </a>
+                                <a href="oneproject.html"> <picture><source srcset="img/blog__block2-2.webp" type="image/webp"><img src="img/blog__block2-2.jpg" alt=""></picture> </a>
                                 <div class="blog__block2-hover">
                                     <p>Interior design, <br> LCD Rybalsky</p>
 
                                 </div>
                             </div>
                         </div>
-                        <div class="blog__block2-sec3">
+                        <div class="blog__block2-sec3 blog-section filter-blog s s-news">
                             <div class="blog__block2-image">
-                                <a href=""> <picture><source srcset="img/blog__block2-3.webp" type="image/webp"><img src="img/blog__block2-3.jpg" alt=""></picture> </a>
+                                <a href="oneproject.html"> <picture><source srcset="img/blog__block2-3.webp" type="image/webp"><img src="img/blog__block2-3.jpg" alt=""></picture> </a>
                                 <div class="blog__block2-hover">
                                     <p>Non-standard <br> plinth options</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="blog__block2-sec4">
+                        <div class="blog__block2-sec4 blog-section filter-news s s-news">
                             <div class="blog__block2-image">
-                                <a href=""> <picture><source srcset="img/blog__block2-4.webp" type="image/webp"><img src="img/blog__block2-4.jpg" alt=""></picture> </a>
+                                <a href="oneproject.html"> <picture><source srcset="img/blog__block2-4.webp" type="image/webp"><img src="img/blog__block2-4.jpg" alt=""></picture> </a>
                                 <div class="blog__block2-hover">
                                     <p>Interior design, <br> LCD Rybalsky</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="blog__block2-sec5">
+                        <div class="blog__block2-sec5 blog-section filter-news ">
                             <div class="blog__block2-image">
-                                <a href=""> <picture><source srcset="img/blog__block2-5.webp" type="image/webp"><img src="img/blog__block2-5.jpg" alt=""></picture> </a>
+                                <a href="oneproject.html"> <picture><source srcset="img/blog__block2-5.webp" type="image/webp"><img src="img/blog__block2-5.jpg" alt=""></picture> </a>
                                 <div class="blog__block2-hover">
                                     <p>Non-standard <br> plinth options</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="blog__block2-sec7">
+                        <div class="blog__block2-sec7 s s-advice">
                             <div class="blog__block2-image">
-                                <a href=""> <picture><source srcset="img/blog__block2-6.webp" type="image/webp"><img src="img/blog__block2-6.jpg" alt=""></picture> </a>
+                                <a href="oneproject.html"> <picture><source srcset="img/blog__block2-6.webp" type="image/webp"><img src="img/blog__block2-6.jpg" alt=""></picture> </a>
                             </div>
                         </div>
-
-
-                        <div class="blog__block2-sec6">
+                        <div class="blog__block2-sec6 blog-section filter-advice s s-advice">
                             <div class="blog__block2-image">
                                 <p class="blog__block2-text1">5 smart tips for productive collaboration with the
                                     designer</p>
@@ -154,7 +149,8 @@
                                     Cras vel gravida urna.
                                     Donec blandit sapien eu diam ullamcorper
                                     euismod. Nam tempus pellentesque ligula ut aliquam.</p>
-                                <p class="blog__block2-link"> <span class="blog__block2-span"></span><a href="">Discover
+                                <p class="blog__block2-link"> <span class="blog__block2-span"></span><a
+                                        href="onenews.html">Discover
                                         more</a> <span class="blog__block2-span2"></span>
                                 </p>
                             </div>
@@ -208,7 +204,7 @@
                     mauris vitae posuere.
                     Ut at luctus
                     ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.</p>
-                <button class="popup__button"> <a class="popup-link" href="#popup">Send again</a></button>
+                <a class="popup__button popup-link" href="#popup">Send again</a>
 
             </div>
 
@@ -339,7 +335,7 @@
                                 </div>
                             </div>
                             <div class="popup__button">
-                                <button> <a class="popup__font1 popup-link" href="#popup2">Send Request</a></button>
+                                <a class="popup-link popup__font1" href="#popup2">Send Request</a>
                             </div>
                         </div>
                         <div class="popup__text2">
@@ -357,8 +353,9 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.js?_v=20221013134816"></script>
-    <script src="js/app.min.js?_v=20221013134816"></script>
+</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js?_v=20221015104524"></script>
+    <script src="js/app.min.js?_v=20221015104524"></script>
 </body>
 
 </html>
